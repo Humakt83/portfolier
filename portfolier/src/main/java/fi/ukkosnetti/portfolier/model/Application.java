@@ -3,12 +3,19 @@ package fi.ukkosnetti.portfolier.model;
 import java.util.Date;
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "translation")
 public class Application {
 
 	public enum ApplicationType {
 		GAME, DESKTOP, WEBAPPLICATION, WEBPAGE
 	}
 
+	@Id
 	public final String name;
 
 	public final String description;
