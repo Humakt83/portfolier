@@ -40,13 +40,19 @@
     "zone.js": "^0.7.6"
   },
   "devDependencies": {
+    "babelify": "^7.3.0",
     "browser-sync": "^2.18.7",
+    "browserify": "^14.0.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
     "gulp-sourcemaps": "^2.4.0",
     "gulp-task-loader": "^1.4.4",
     "gulp-typescript": "^3.1.4",
+    "systemjs-builder": "^0.16.2",
     "typescript": "^2.1.5",
-    "typings": "^2.1.0"
+    "typings": "^2.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
