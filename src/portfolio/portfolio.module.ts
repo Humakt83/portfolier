@@ -2,12 +2,11 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import { TranslateModule } from 'ng2-translate';
 import { PortfolioComponent } from './portfolio.component';
 
 @NgModule({
     declarations: [PortfolioComponent],
-    imports: [BrowserModule, HttpModule, FormsModule, TranslateModule.forRoot()],
+    imports: [BrowserModule, HttpModule, FormsModule],
     bootstrap: [],
     providers: [HttpModule]
 })
