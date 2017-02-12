@@ -1,0 +1,12 @@
+<nav>
+    <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Home</a>
+    <a [routerLink]=" ['./portfolio'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Portfolio</a>
+</nav>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<footer>
+    <span>Portfolier by <a [href]="url">Risto Salama</a></span>
+</footer>
