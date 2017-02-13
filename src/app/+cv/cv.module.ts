@@ -7,13 +7,15 @@ import { CVComponent } from './cv.component';
 import { EducationComponent } from './education';
 import { ExperienceComponent } from './experience';
 import { SkillsComponent } from './skills';
+import { MenuComponent } from './menu.component';
 
 @NgModule({
     declarations: [
         CVComponent,
         EducationComponent,
         ExperienceComponent,
-        SkillsComponent
+        SkillsComponent,
+        MenuComponent
     ],
     imports: [
         CommonModule,
