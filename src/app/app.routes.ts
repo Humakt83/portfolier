@@ -4,9 +4,9 @@ import { NoContentComponent } from './no-content';
 import { PortfolioComponent } from './portfolio';
 
 export const ROUTES: Routes = [
-  { path: '',      component: HomeComponent },
-  { path: 'home',  component: HomeComponent },
-  // { path: 'cv', loadChildren: './+detail#DetailModule'},
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'cv', loadChildren: './+cv#CVModule'},
   { path: 'portfolio', component: PortfolioComponent },
-  { path: '**',    component: NoContentComponent },
+  { path: '**', component: NoContentComponent }
 ];
