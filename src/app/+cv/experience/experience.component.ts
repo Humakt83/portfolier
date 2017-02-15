@@ -1,8 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CVService } from '../cv.service';
+import { Experience } from './experience';
 
 @Component({
     templateUrl: './experience.html'
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements OnInit {
+
+    public experience: Experience[] = [];
+
+    constructor(private cv: CVService) {}
+
+    public ngOnInit() {
+        this.cv.getExperience()
+        .subscribe((result: Experience[]) => this.experience = result);
+    }
 
 }
