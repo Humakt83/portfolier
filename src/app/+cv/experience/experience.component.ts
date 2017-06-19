@@ -9,11 +9,12 @@ export class ExperienceComponent implements OnInit {
 
     public experience: Experience[] = [];
 
-    constructor(private cv: CVService) {}
+    constructor(private cv: CVService) { }
 
     public ngOnInit() {
         this.cv.getExperience()
-        .subscribe((result: Experience[]) => this.experience = result);
+            .first()
+            .subscribe((result: Experience[]) => this.experience = result);
     }
 
 }

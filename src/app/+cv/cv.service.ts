@@ -3,7 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { Education } from './education';
 import { SkillGroup } from './skills';
-import { Experience } from './experience';
+import { Experience } from './experience/experience';
 
 const PREFIX_TO_DATA = 'assets/data/';
 

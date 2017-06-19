@@ -13,6 +13,7 @@ export class EducationComponent implements OnInit {
 
     public ngOnInit() {
         this.cv.getEducation()
+        .first()
         .subscribe((result: Education[]) => this.education = result);
     }
 

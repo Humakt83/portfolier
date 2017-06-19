@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './cv.routes';
 import { CVService } from './cv.service';
@@ -21,6 +22,7 @@ import 'rxjs/Rx';
     ],
     imports: [
         CommonModule,
+        HttpModule,
         FormsModule,
         RouterModule.forChild(routes)
     ],
