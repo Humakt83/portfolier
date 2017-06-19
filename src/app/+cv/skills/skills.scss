@@ -1,7 +1,9 @@
+@import '../variables';
+
 .skillgroup {
     border-radius: 5px;
     width: 80%;
-    background: linear-gradient(to bottom right, white, rgb(210, 220, 255));
+    background: $section-background;
     padding: 3px;
     margin-bottom: 3px;
     color: black;
