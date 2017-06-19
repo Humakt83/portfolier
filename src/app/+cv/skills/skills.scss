@@ -1,0 +1,29 @@
+.skillgroup {
+    border-radius: 5px;
+    width: 80%;
+    background: linear-gradient(to bottom right, white, rgb(210, 220, 255));
+    padding: 3px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+.groupheader {
+    font-size: normal;
+    font-weight: bolder;
+}
+
+.skill {
+    margin-top: 2px;
+}
+
+.skillname {
+    margin-left: 20px;
+    font-size: smaller;
+}
+
+.skilllevel {
+    position: absolute;
+    left: 180px;
+    font-size: smaller;
+    font-style: italic;
+}

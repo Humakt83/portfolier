@@ -1,2 +1,9 @@
 <menu></menu>
 <h3>Skills</h3>
+<div class="skillgroup" *ngFor="let group of skillGroups">
+    <div class="groupheader">{{group.group}}</div>
+    <div class="skill" *ngFor="let skill of group.skills">
+        <span class="skillname">{{skill.name}}</span>
+        <span class="skilllevel">{{skillLevel[skill.level]}}</span>
+    </div>
+</div>
