@@ -7,7 +7,7 @@ import {
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.css'
+    'app.css'
   ],
   templateUrl: './app.html'
 })

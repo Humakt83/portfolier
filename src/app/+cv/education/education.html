@@ -1,6 +1,11 @@
 <menu></menu>
 <h3>Education</h3>
-<ul type="disc">
-    <li *ngFor="let study of education">{{study.organizer}}</li>
-</ul>
+<div class="education" *ngFor="let study of education">
+    <div class="educationHeader">
+        <span>{{study.educationHeader}}</span>
+    </div>
+    <div class="educationDescription">
+        <p>{{study.description}}</p>
+    </div>
+</div>
     

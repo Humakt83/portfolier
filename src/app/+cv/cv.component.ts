@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './cv.html'
+    templateUrl: 'cv.html'
 })
 export class CVComponent {
 

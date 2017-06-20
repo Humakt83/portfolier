@@ -1,0 +1,21 @@
+@import '../variables';
+
+.education {
+    border-radius: 5px;
+    width: 80%;
+    background: $section-background;
+    padding: 5px;
+    padding-top: 10px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+.educationHeader {
+    font-size: normal;
+    font-weight: bolder;
+}
+
+.educationDescription {
+    font-size: smaller;
+    margin-left: 20px;
+}

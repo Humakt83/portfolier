@@ -5,7 +5,7 @@ import { SkillLevel } from './skill';
 
 @Component({
     selector: 'skills',
-    templateUrl: './skills.html',
+    templateUrl: 'skills.html',
     styleUrls: ['skills.scss']
 })
 export class SkillsComponent implements OnInit {

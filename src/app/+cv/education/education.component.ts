@@ -3,7 +3,8 @@ import { CVService } from '../cv.service';
 import { Education } from './education';
 
 @Component({
-    templateUrl: './education.html'
+    templateUrl: 'education.html',
+    styleUrls: ['education.scss']
 })
 export class EducationComponent implements OnInit {
 

@@ -3,7 +3,7 @@ import { CVService } from '../cv.service';
 import { Experience } from './experience';
 
 @Component({
-    templateUrl: './experience.html'
+    templateUrl: 'experience.html'
 })
 export class ExperienceComponent implements OnInit {
 
