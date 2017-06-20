@@ -1,6 +1,6 @@
-@import '../variables';
+@import './variables';
 
-.education {
+.section {
     border-radius: 5px;
     width: 80%;
     background: $section-background;
@@ -10,12 +10,12 @@
     color: black;
 }
 
-.educationHeader {
+.sectionHeader {
     font-size: normal;
     font-weight: bolder;
 }
 
-.educationDescription {
+.sectionDescription {
     font-size: smaller;
     margin-left: 20px;
 }

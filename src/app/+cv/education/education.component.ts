@@ -4,7 +4,7 @@ import { Education } from './education';
 
 @Component({
     templateUrl: 'education.html',
-    styleUrls: ['education.scss']
+    styleUrls: ['../common.scss']
 })
 export class EducationComponent implements OnInit {
 
