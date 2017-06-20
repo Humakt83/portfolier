@@ -23,7 +23,6 @@ import { NoContentComponent } from './no-content';
 import { PortfolioComponent } from './portfolio';
 
 import '../styles/styles.scss';
-import '../styles/headings.css';
 
 @NgModule({
   bootstrap: [ AppComponent ],

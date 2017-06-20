@@ -1,13 +1,9 @@
 <nav>
     <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Home</a>
-    <a [routerLink]=" ['./cv'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">CV</a>
+    <a [routerLink]=" ['./cv/experience'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: false}">CV</a>
     <a [routerLink]=" ['./portfolio'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Portfolio</a>
 </nav>
 
 <main>
     <router-outlet></router-outlet>
 </main>
-
-<footer>
-    <span>Portfolier by Risto Salama</span>
-</footer>
