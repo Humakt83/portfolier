@@ -1,8 +1,19 @@
-<nav>
-    <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Home</a>
-    <a [routerLink]=" ['./cv/experience'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: false}">CV</a>
-    <a [routerLink]=" ['./portfolio'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Portfolio</a>
-</nav>
+<ul>    
+    <li>
+        <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    </li>
+    <li class="dropdown">
+        <a class="dropdownbtn">CV</a>
+        <div class="dropdown-content">
+            <a [routerLink]=" ['/cv/experience'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Experience</a>
+            <a [routerLink]=" ['/cv/education'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Education</a>
+            <a [routerLink]=" ['/cv/skills'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Skills</a>
+        </div>
+    </li>
+    <li>
+        <a [routerLink]=" ['./portfolio'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Portfolio</a>
+    </li>
+</ul>
 
 <main>
     <router-outlet></router-outlet>

@@ -9,7 +9,6 @@ import { CVComponent } from './cv.component';
 import { EducationComponent } from './education';
 import { ExperienceComponent } from './experience';
 import { SkillsComponent } from './skills';
-import { MenuComponent } from './menu.component';
 import 'rxjs/Rx';
 
 @NgModule({
@@ -17,8 +16,7 @@ import 'rxjs/Rx';
         CVComponent,
         EducationComponent,
         ExperienceComponent,
-        SkillsComponent,
-        MenuComponent
+        SkillsComponent
     ],
     imports: [
         CommonModule,
