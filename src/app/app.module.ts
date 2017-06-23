@@ -21,7 +21,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NoContentComponent } from './no-content';
 import { PortfolioComponent } from './portfolio';
+import { HomeService } from './home/home.service';
 
+import 'rxjs/Rx';
 import '../styles/styles.scss';
 
 @NgModule({
@@ -38,8 +40,9 @@ import '../styles/styles.scss';
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
-  providers: [ // expose our Services and Providers into Angular's dependency injection
+  providers: [
     ENV_PROVIDERS,
+    HomeService
   ]
 })
 export class AppModule {

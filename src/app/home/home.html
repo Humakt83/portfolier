@@ -1,0 +1,10 @@
+<div *ngIf="!!home" class="home">
+    <div class="leftPanel" *ngIf="!!home.showPicture">
+        <img src="assets/img/me.jpg">
+        <span>{{home.name}}</span>
+    </div>
+    <div class="rightPanel">        
+        <h1>{{home.title}}</h1>
+        <p *ngFor="let text of home.text">{{text}}</p>
+    </div>
+</div>
