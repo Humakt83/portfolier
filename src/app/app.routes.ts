@@ -1,12 +1,10 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home';
-import { NoContentComponent } from './no-content';
-import { PortfolioComponent } from './portfolio';
+import { PortfolioComponent } from './+portfolio/portfolio.component';
 
 export const ROUTES: Routes = [
-  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'cv', loadChildren: './+cv#CVModule'},
+  { path: 'cv', loadChildren: './+cv#CVModule' },
   { path: 'portfolio', component: PortfolioComponent },
-  { path: '**', component: NoContentComponent }
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];

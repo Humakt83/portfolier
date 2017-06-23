@@ -19,25 +19,23 @@ import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { NoContentComponent } from './no-content';
-import { PortfolioComponent } from './portfolio';
+import { PortfolioModule } from './+portfolio/portfolio.module';
 import { HomeService } from './home/home.service';
 
 import 'rxjs/Rx';
 import '../styles/styles.scss';
 
 @NgModule({
-  bootstrap: [ AppComponent ],
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
-    HomeComponent,
-    NoContentComponent,
-    PortfolioComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    PortfolioModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [
@@ -49,6 +47,6 @@ export class AppModule {
 
   constructor(
     public appRef: ApplicationRef,
-  ) {}
+  ) { }
 
 }
