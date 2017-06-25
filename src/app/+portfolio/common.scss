@@ -1,0 +1,20 @@
+.tags {
+    font-size: smaller;
+    margin-bottom: 5px;
+}
+
+.tag {
+    font-weight: bolder;
+    font-size: small;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(10, 10, 100), rgb(20, 20, 150), rgb(30, 30, 200), rgb(40, 40, 250));
+    padding: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.selectable {
+    cursor: pointer;
+}

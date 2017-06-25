@@ -4,7 +4,7 @@ import { Project } from './project';
 @Component({
     selector: 'project',
     templateUrl: 'project.html',
-    styleUrls: ['project.scss']
+    styleUrls: ['project.scss', 'common.scss']
 })
 export class ProjectComponent {
 

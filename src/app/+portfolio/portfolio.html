@@ -1,0 +1,6 @@
+<h1>Portfolio</h1>
+<div *ngIf="!!tags && tags.length > 0" class="tags">
+    <span>Filter: </span>
+    <span class="tag selectable" *ngFor="let tag of tags" (click)="filterByTag(tag)">{{tag}}</span>
+<div>
+<project *ngFor="let project of projects | tagfilter: selectedTag" [project]="project"></project>
