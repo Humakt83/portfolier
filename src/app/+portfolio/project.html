@@ -1,1 +1,15 @@
-<div>{{project.name}}</div>
+<div class="project">
+    <div class="projectHeader">
+        {{project.name}}
+    </div>
+    <div class="projectImage" *ngIf="!!project.images && project.images.length > 0">
+        <img [src]="'assets/img/projects/' + project.images[0]">
+    </div>
+    <div class="projectDescription" *ngIf="!!project.description">
+        <p>{{project.description}}</p>
+    </div>
+    <div class="tags" *ngIf="!!project.tags && project.tags.length > 0">
+        <span>Tags: </span>
+        <span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
+    </div>
+</div>
