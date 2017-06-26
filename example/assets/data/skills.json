@@ -1,0 +1,36 @@
+[
+    {
+        "group": "Metalwork",
+        "skills": [
+            {
+                "name": "Threading",
+                "proficiency": "INTERMEDIATE"
+            },
+            {
+                "name": "Welding",
+                "proficiency": "GOOD"
+            },
+            {
+                "name": "Turning",
+                "proficiency": "PROFESSIONAL"
+            }
+        ]
+    },
+    {
+        "group": "Language",
+        "skills": [
+            {
+                "name": "Spanish",
+                "proficiency": "PROFESSIONAL"
+            },
+            {
+                "name": "Portuguese",
+                "proficiency": "BASICS"
+            },
+            {
+                "name": "English",
+                "proficiency": "GOOD"
+            }
+        ]
+    }
+]
