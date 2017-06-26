@@ -4,7 +4,7 @@ html, body{
 }
 
 a.active {
-    background-color: gray;
+    font-weight: bolder;
 }
 
 ul {
@@ -12,7 +12,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background: linear-gradient(to right, rgb(10, 10, 80), rgb(20, 20, 120), rgb(30, 30, 160), rgb(40, 40, 200), rgb(50, 50, 250));
 }
 
 li {

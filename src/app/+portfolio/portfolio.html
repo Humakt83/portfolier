@@ -1,4 +1,6 @@
-<h1>Portfolio</h1>
+<div>
+    <h3>Portfolio</h3>
+</div>
 <div *ngIf="!!tags && tags.length > 0" class="tags">
     <span>Filter: </span>
     <span class="tag selectable" *ngFor="let tag of tags" (click)="filterByTag(tag)">{{tag}}</span>
