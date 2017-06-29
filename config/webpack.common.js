@@ -1,14 +1,6 @@
-/**
- * @author: @AngularClass
- */
-
 const webpack = require('webpack');
 const helpers = require('./helpers');
 
-/*
- * Webpack Plugins
- */
-// problem with copy-webpack-plugin
 const AssetsPlugin = require('assets-webpack-plugin');
 const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
@@ -21,22 +13,12 @@ const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const ngcWebpack = require('ngc-webpack');
 
-/*
- * Webpack Constants
- */
 const HMR = helpers.hasProcessFlag('hot');
 const AOT = helpers.hasNpmFlag('aot');
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
-  baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
 
-/*
- * Webpack configuration
- *
- * See: http://webpack.github.io/docs/configuration.html#cli
- */
 module.exports = function (options) {
   isProd = options.env === 'production';
   return {
@@ -265,8 +247,7 @@ module.exports = function (options) {
        * See: https://www.npmjs.com/package/copy-webpack-plugin
        */
       new CopyWebpackPlugin([
-        { from: 'src/assets', to: 'assets' },
-        { from: 'src/meta'}
+        { from: 'src/assets', to: 'assets' }
       ]),
 
 
