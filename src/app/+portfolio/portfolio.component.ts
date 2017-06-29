@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from './project';
 import { PortfolioService } from './portfolio.service';
+import _ from 'lodash';
 
 @Component({
     selector: 'portfolio',
@@ -20,16 +21,11 @@ export class PortfolioComponent implements OnInit {
             .subscribe(
             (result: Project[]) => {
                 this.projects = result;
-                //TODO: use lodash
-                this.projects.map((project: Project) => project.tags).forEach(tags => {
-                    tags.forEach(tag => {
-                        if (!this.tags.find(val => val === tag)) {
-                            this.tags.push(tag);
-                        }
-                    })
-
-                });
-
+                this.tags = <string[]> _.chain(this.projects)
+                .map((project: Project) => project.tags)
+                .flatten()
+                .uniq()
+                .value();
             });
     }
 

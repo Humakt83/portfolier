@@ -1,9 +1,10 @@
 <div class="project">
     <div class="projectHeader">
-        {{project.name}}
+        {{project.name}} 
+        <span class="created" *ngIf="!!project.created">({{project.createdFormatted}})</span>
     </div>
-    <div class="projectImage" *ngIf="!!project.images && project.images.length > 0">
-        <img [src]="'assets/img/projects/' + project.images[0]">
+    <div class="projectImage" *ngIf="!!project.images && project.images.length > 0" (click)="goToLink()">
+        <img [src]="'assets/img/projects/' + project.images[0]" [class.selectable]="!!project.link">
     </div>
     <div class="projectDescription" *ngIf="!!project.description">
         <p>{{project.description}}</p>

@@ -13,6 +13,11 @@
     font-weight: bolder;
 }
 
+.created {
+    font-size: smaller;
+    font-weight: normal;
+}
+
 .projectDescription {
     font-size: smaller;
     width: 600px;
@@ -21,5 +26,6 @@
 
 .projectImage img {
     max-height: 200px;
+    border: 2px solid white;
     border-radius: 5px;
 }

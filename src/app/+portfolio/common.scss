@@ -3,6 +3,7 @@
 }
 
 .tag {
+    border: 2px solid rgba(0, 0, 0, 0);
     font-weight: bolder;
     font-size: small;
     color: white;
@@ -12,8 +13,25 @@
     padding-bottom: 4px;
     border-radius: 10px;
     margin-right: 3px;
+    cursor: default;
 }
 
 .selectable {
-    cursor: pointer;
+    cursor: pointer;    
 }
+
+.selected {
+    border: 2px solid rgb(250, 200, 0);
+    color: rgb(250, 200, 0);
+}
+
+.selectable:hover {
+    border: 2px solid rgb(250, 200, 0) !important;
+    color: rgb(250, 200, 0);
+}
+
+.selected:hover {
+    border: 2px solid rgba(0, 0, 0, 0) !important;
+    color: white;
+}
+
