@@ -11,7 +11,7 @@ export class TagFilterPipe implements PipeTransform {
         return projects.filter((project: Project) => !tag || project.tags.indexOf(tag) >= 0).sort((a: Project, b: Project) => this.compareByDate(a.created, b.created));
     }
 
-    private compareByDate = (a: moment.Moment, b: moment.Moment): number {
+    private compareByDate(a: moment.Moment, b: moment.Moment): number {
         if (a === b || (!!a && !!b && a.isSame(b))) {
             return 0;
         }

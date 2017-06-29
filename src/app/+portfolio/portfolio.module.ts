@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { PortfolioComponent } from './portfolio.component';
 import { PortfolioService } from './portfolio.service';
 import { ProjectComponent } from './project.component';
-import {TagFilterPipe } from './tagfilter.pipe';
+import { TagFilterPipe } from './tagfilter.pipe';
 import 'rxjs/Rx';
 
 @NgModule({

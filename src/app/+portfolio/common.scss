@@ -1,5 +1,6 @@
 .tags {
     font-size: smaller;
+    margin-bottom: 5px;
 }
 
 .tag {
@@ -35,3 +36,7 @@
     color: white;
 }
 
+.projects {
+    overflow: hidden;
+    display: table;
+}

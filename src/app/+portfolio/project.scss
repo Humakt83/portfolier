@@ -1,16 +1,31 @@
 .project {
-    border-radius: 5px;
-    border: 2px ridge blue;
+    border-radius: 10px;
+    background: linear-gradient(to top left, rgb(170, 190, 255), rgb(180, 200, 255), rgb(190, 210, 255), rgb(200, 220, 255), rgb(210, 230, 255), rgb(220, 240, 255));
     max-width: 80%;
     padding: 5px;
     margin-top: 15px;
+    @media (min-width: 1800px) {
+        display: inline-table;
+        width: 49%;
+        margin-right: 3px;
+    }
+    @media (min-width: 2560px) {
+        display: inline-table;
+        width: 32%;
+        margin-right: 3px;
+    }
+}
+
+.projectContent {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .projectHeader {
     margin-top: 3px;
     margin-bottom: 7px;
     font-size: normal;
-    font-weight: bolder;
+    font-weight: bolder;    
 }
 
 .created {
@@ -20,12 +35,22 @@
 
 .projectDescription {
     font-size: smaller;
-    width: 600px;
+    max-width: 600px;
     margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    @media (min-width: 2560px) {
+        max-width: 500px;
+    }
+}
+
+.projectImage {
+    display: inline-block;
 }
 
 .projectImage img {
     max-height: 200px;
-    border: 2px solid white;
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
+    max-width: 95%;
 }

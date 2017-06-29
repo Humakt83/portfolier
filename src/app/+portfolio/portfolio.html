@@ -5,4 +5,6 @@
     <span>Filter: </span>
     <span class="tag selectable" *ngFor="let tag of tags" (click)="filterByTag(tag)" [class.selected]="tag === selectedTag">{{tag}}</span>
 <div>
-<project *ngFor="let project of projects | tagfilter: selectedTag" [project]="project"></project>
+<div class="projects">
+    <project *ngFor="let project of projects | tagfilter: selectedTag" [project]="project"></project>
+</div>
