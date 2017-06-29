@@ -14,7 +14,6 @@
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "build:aot": "npm run build:aot:prod",
     "build:dev": "npm run clean:dist && webpack --config config/webpack.dev.js --progress --profile",
-    "build:docker": "npm run build:prod && docker build -t angular2-webpack-start:latest .",
     "build:prod": "npm run clean:dist && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "build": "npm run build:dev",
     "ci:aot": "npm run lint && npm run test && npm run build:aot && npm run e2e",
@@ -28,7 +27,6 @@
     "clean:dist": "npm run rimraf -- dist",
     "clean:install": "npm set progress=false && npm install",
     "clean": "npm cache clean && npm run rimraf -- node_modules doc coverage dist compiled dll",
-    "docker": "docker",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
     "e2e:live": "npm-run-all -p -r server:prod:ci protractor:live",
     "e2e:travis": "npm-run-all -p -r server:prod:ci protractor:delay",
@@ -84,6 +82,7 @@
     "http-server": "^0.9.0",
     "ie-shim": "^0.1.0",
     "jasmine-core": "^2.5.2",
+    "moment": "^2.18.1",
     "reflect-metadata": "^0.1.9",
     "rxjs": "5.0.2",
     "zone.js": "0.7.6"
