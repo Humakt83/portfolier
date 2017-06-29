@@ -1,6 +1,8 @@
+@import '../variables';
+
 .project {
     border-radius: 10px;
-    background: linear-gradient(to top left, rgb(170, 190, 255), rgb(180, 200, 255), rgb(190, 210, 255), rgb(200, 220, 255), rgb(210, 230, 255), rgb(220, 240, 255));
+    background: $project-background;
     max-width: 95%;
     padding: 5px;
     margin-top: 15px;
@@ -50,7 +52,7 @@
 
 .projectImage img {
     max-height: 200px;
-    border: 2px solid rgba(0, 0, 0, 0);
+    border: $project-image-border;
     border-radius: 5px;
     max-width: 95%;
 }

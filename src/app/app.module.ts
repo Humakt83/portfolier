@@ -11,7 +11,6 @@ import { PortfolioModule } from './+portfolio/portfolio.module';
 import { HomeService } from './home/home.service';
 
 import 'rxjs/Rx';
-import '../styles/styles.scss';
 
 @NgModule({
   bootstrap: [AppComponent],

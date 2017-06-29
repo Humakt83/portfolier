@@ -1,0 +1,22 @@
+// Common & Menu
+$header-color: rgb(70, 70, 255);
+$menu-background: linear-gradient(to right, rgb(10, 10, 80), rgb(20, 20, 120), rgb(30, 30, 160), rgb(40, 40, 200), rgb(50, 50, 250));
+$submenu-hover-background: #f1f1f1;
+$menu-hover: #f9f9f9;
+$submenu-background: $menu-hover;
+$image-border: 2px ridge blue;
+
+// CV
+$section-background: linear-gradient(to bottom right, white, rgb(210, 220, 255));
+
+// Portfolio
+$tag-background: linear-gradient(to bottom right, rgb(10, 10, 100), rgb(20, 20, 150), rgb(30, 30, 200), rgb(40, 40, 250));
+$tag-border: 2px solid rgba(0, 0, 0, 0);
+$pf-selected-text-color: rgb(250, 200, 0);
+$pf-selected-border: 2px solid $pf-selected-text-color;
+$pf-selected-pressed-text-color: white;
+$pf-selected-pressed-border: 2px solid rgba(0, 0, 0, 0);
+$pf-selectable-pressed-border: $pf-selected-border;
+$pf-selectable-pressed-text-color: $pf-selected-text-color;
+$project-background: linear-gradient(to top left, rgb(170, 190, 255), rgb(180, 200, 255), rgb(190, 210, 255), rgb(200, 220, 255), rgb(210, 230, 255), rgb(220, 240, 255));
+$project-image-border: 2px solid rgba(0, 0, 0, 0);

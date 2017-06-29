@@ -1,14 +1,16 @@
+@import '../variables';
+
 .tags {
     font-size: smaller;
     margin-bottom: 5px;
 }
 
 .tag {
-    border: 2px solid rgba(0, 0, 0, 0);
+    border: $tag-border;
     font-weight: bolder;
     font-size: small;
     color: white;
-    background: linear-gradient(to bottom right, rgb(10, 10, 100), rgb(20, 20, 150), rgb(30, 30, 200), rgb(40, 40, 250));
+    background: $tag-background;
     padding: 2px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -22,18 +24,18 @@
 }
 
 .selected {
-    border: 2px solid rgb(250, 200, 0);
-    color: rgb(250, 200, 0);
+    border: $pf-selected-border;
+    color: $pf-selected-text-color;
 }
 
-.selectable:hover {
-    border: 2px solid rgb(250, 200, 0) !important;
-    color: rgb(250, 200, 0);
+.selectable:active {
+    border: $pf-selectable-pressed-border !important;
+    color: $pf-selectable-pressed-text-color;
 }
 
-.selected:hover {
-    border: 2px solid rgba(0, 0, 0, 0) !important;
-    color: white;
+.selected:active {
+    border: $pf-selected-pressed-border !important;
+    color: $pf-selected-pressed-text-color;
 }
 
 .projects {
