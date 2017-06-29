@@ -6,7 +6,7 @@ import {
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['app.css'],
+  styleUrls: ['app.scss'],
   templateUrl: 'app.html'
 })
 export class AppComponent {

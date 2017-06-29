@@ -67,4 +67,7 @@ li.dropdown {
 
 .logo img {
     height: 42px;
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
