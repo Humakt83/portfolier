@@ -5,15 +5,13 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './cv.routes';
 import { CVService } from './cv.service';
-import { CVComponent } from './cv.component';
-import { EducationComponent } from './education';
-import { ExperienceComponent } from './experience';
-import { SkillsComponent } from './skills';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { SkillsComponent } from './skills/skills.component';
 import 'rxjs/Rx';
 
 @NgModule({
     declarations: [
-        CVComponent,
         EducationComponent,
         ExperienceComponent,
         SkillsComponent

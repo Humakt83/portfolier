@@ -2,15 +2,15 @@
     <li>
         <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
     </li>
-    <li class="dropdown">
+    <li class="dropdown" *ngIf="!!experienceExists || !!educationExists || !!skillsExists">
         <a class="dropdownbtn">CV</a>
         <div class="dropdown-content">
-            <a [routerLink]=" ['/cv/experience'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Experience</a>
-            <a [routerLink]=" ['/cv/education'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Education</a>
-            <a [routerLink]=" ['/cv/skills'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Skills</a>
+            <a *ngIf="!!experienceExists" [routerLink]=" ['/cv/experience'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Experience</a>
+            <a *ngIf="!!educationExists" [routerLink]=" ['/cv/education'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Education</a>
+            <a *ngIf="!!skillsExists" [routerLink]=" ['/cv/skills'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Skills</a>
         </div>
     </li>
-    <li>
+    <li *ngIf="!!portfolioExists">
         <a [routerLink]=" ['./portfolio'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Portfolio</a>
     </li>
 </ul>

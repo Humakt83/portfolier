@@ -15,4 +15,10 @@ export class PortfolioService {
             .map((response: Response) => response.json().map((json: any) => Project.fromJson(json)));
     }
 
+    public portfolioExists(): Observable<boolean> {
+        return this.getPortfolio()
+        .map((results: Project[]) => true)
+        .catch((err: any) => Observable.of(false));
+    }
+
 }

@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioModule } from './+portfolio/portfolio.module';
 import { HomeService } from './home/home.service';
+import { CVModule } from './+cv/cv.module';
 
 import 'rxjs/Rx';
 
@@ -23,6 +24,7 @@ import 'rxjs/Rx';
     FormsModule,
     HttpModule,
     PortfolioModule,
+    CVModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [
