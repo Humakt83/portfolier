@@ -1,7 +1,10 @@
 <div *ngIf="!!home" class="home">
     <div class="leftPanel" *ngIf="!!home.showPicture">
-        <img src="assets/img/me.jpg">
+        <img src="assets/img/me.jpg" class="photo">
         <span>{{home.name}}</span>
+        <a *ngIf="!!home.linkedIn" [href]="home.linkedIn" class="linkedIn">
+            <img src="assets/img/linkedin.png" class="linkedInLogo">
+        </a>
     </div>
     <div class="rightPanel">        
         <h1>{{home.title}}</h1>
