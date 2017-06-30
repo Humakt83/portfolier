@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Risto Salama">
-  <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta name="description" content="Portfolier: website that dynamically creates portfolio and cv from json files">
 </head>
 
 <body>
@@ -13,11 +13,6 @@
   <app>
     Loading...
   </app>
-
-  <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
-  <!-- Webpack Dev Server reload -->
-  <script src="/webpack-dev-server.js"></script>
-  <% } %>
 
 </body>
 </html>

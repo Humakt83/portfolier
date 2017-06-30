@@ -1,4 +1,3 @@
-import { CVComponent } from './cv.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
