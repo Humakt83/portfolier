@@ -4,8 +4,10 @@
         <span class="created" *ngIf="!!project.created">({{project.createdFormatted}})</span>
     </div>
     <div class="projectContent">
-        <div class="projectImage" *ngIf="!!project.images && project.images.length > 0" (click)="goToLink()">
-            <img [src]="'assets/img/projects/' + project.images[0]" [class.selectable]="!!project.link">
+        <div class="projectImage" *ngIf="!!project.images && project.images.length > 0" (click)="goToLink()" (mouseover)="displayArrow = true" (mouseleave)="displayArrow = false">
+            <img src="assets/img/arrow.png" *ngIf="displayArrow && currentImage > 0" class="leftArrow" (click)="previousImage($event)" [style.display]="displayArrow">
+            <img [src]="'assets/img/projects/' + project.images[currentImage]" [class.selectable]="!!project.link">
+            <img src="assets/img/arrow.png" *ngIf="displayArrow && project.images.length > 1 && currentImage < project.images.length - 1" class="rightArrow" (click)="nextImage($event)">
         </div>
         <div class="projectDescription" *ngIf="!!project.description">
             <p>{{project.description}}</p>

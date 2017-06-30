@@ -13,7 +13,6 @@ import {
 } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 
-// Load the implementations that should be tested
 import { AppState } from '../app.service';
 import { HomeComponent } from './home.component';
 import { Title } from './title';
@@ -22,7 +21,6 @@ describe(`Home`, () => {
   let comp: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
-  // async beforeEach
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [HomeComponent],

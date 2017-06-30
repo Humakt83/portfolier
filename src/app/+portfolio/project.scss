@@ -56,3 +56,26 @@
     border-radius: 5px;
     max-width: 95%;
 }
+
+.leftArrow,
+.rightArrow {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.rightArrow {
+    margin-left: -45px;      
+}
+
+.leftArrow {
+    margin-left: 15px;
+    transform: rotate(180deg);
+}
