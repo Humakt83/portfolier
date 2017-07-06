@@ -1,7 +1,7 @@
 <div class="project">
     <div class="projectHeader">
         {{project.name}} 
-        <span class="created" *ngIf="!!project.created">({{project.createdFormatted}})</span>
+        <span class="created" *ngIf="!!project.created" [class.selectableTitle]="!!project.link">({{project.createdFormatted}})</span>
     </div>
     <div class="projectContent">
         <div class="projectImage" *ngIf="!!project.images && project.images.length > 0" (click)="goToLink()" (mouseover)="displayArrow = true" (mouseleave)="displayArrow = false">
