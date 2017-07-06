@@ -3,7 +3,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 
 export const routes = [
-    { path: '', children: [
+    { path: 'cv', children: [
         { path: 'education', component: EducationComponent },
         { path: 'skills', component: SkillsComponent },
         { path: 'experience', component: ExperienceComponent }
