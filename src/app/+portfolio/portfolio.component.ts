@@ -26,15 +26,12 @@ export class PortfolioComponent implements OnInit {
                 .flatten()
                 .uniq()
                 .value();
-            });
+            },
+            error => console.error(error));
     }
 
     public filterByTag(tag: string) {
-        if (this.selectedTag === tag) {
-            this.selectedTag = undefined;
-        } else {
-            this.selectedTag = tag;
-        }
+        this.selectedTag = this.selectedTag === tag ? undefined : tag;
     }
 
 }

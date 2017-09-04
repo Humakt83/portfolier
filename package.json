@@ -29,15 +29,23 @@
   "devDependencies": {
     "@angular/cli": "^1.2.0",
     "@angular/compiler-cli": "^4.2.5",
+    "@types/jasmine": "^2.5.54",
     "@types/node": "~6.0.60",
+    "codelyzer": "^3.1.2",
+    "jasmine-core": "^2.8.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.1.2",
     "ts-node": "~2.0.0",
+    "tslint": "^5.7.0",
     "typescript": "~2.2.0"
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "prodbuild": "ng build --env=prod"
+    "prodbuild": "ng build --env=prod",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "repository": {
     "type": "git",

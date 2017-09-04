@@ -2,12 +2,13 @@ import * as moment from 'moment';
 
 export class Experience {
 
+    public experienceHeader: string = this.formHeader();
+
     public static fromJson(json: any): Experience {
-        let ends: moment.Moment = json.end ? moment(json.end) : undefined;
+        const ends: moment.Moment = json.end ? moment(json.end) : undefined;
         return new Experience(json.company, json.position, json.description, moment(json.start), ends);
     }
 
-    public experienceHeader: string = this.formHeader();
 
     constructor(public company: string, public position: string, public description: string, public start: moment.Moment, public end: moment.Moment) {}
 

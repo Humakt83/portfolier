@@ -18,7 +18,9 @@ export class SkillsComponent implements OnInit {
 
     public ngOnInit() {
         this.cv.getSkills().first()
-        .subscribe((result: SkillGroup[]) => this.skillGroups = result);
+        .subscribe(
+            (result: SkillGroup[]) => this.skillGroups = result,
+            error => console.error(error));
     }
 
 }

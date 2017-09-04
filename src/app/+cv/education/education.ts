@@ -2,12 +2,13 @@ import * as moment from 'moment';
 
 export class Education {
 
+    public educationHeader: string = this.formHeader();
+
     public static fromJson(json: any): Education {
-        let ends: moment.Moment = json.end ? moment(json.end) : undefined;
+        const ends: moment.Moment = json.end ? moment(json.end) : undefined;
         return new Education(json.organizer, json.title, json.description, EducationType[<string> json.type], moment(json.start), ends);
     }
 
-    public educationHeader: string = this.formHeader();
 
     constructor(public organizer: string, public title: string, public description: string, public type: EducationType, public start: moment.Moment, public end: moment.Moment) { }
 

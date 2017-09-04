@@ -16,10 +16,12 @@ export class HomeComponent implements OnInit {
     }
 
     public ngOnInit() {
-        this.homeService.getHome().first().subscribe((result: Home) => {
-            this.home = result;
-            window.document.title = 'Portfolier - ' + this.home.name;
-        });
+        this.homeService.getHome().first().subscribe(
+            (result: Home) => {
+                this.home = result;
+                window.document.title = 'Portfolier - ' + this.home.name;
+            },
+            error => console.error(error));
     }
 
 }

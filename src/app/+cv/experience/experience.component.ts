@@ -15,7 +15,9 @@ export class ExperienceComponent implements OnInit {
     public ngOnInit() {
         this.cv.getExperience()
             .first()
-            .subscribe((result: Experience[]) => this.experience = result);
+            .subscribe(
+                (result: Experience[]) => this.experience = result,
+                error => console.error(error));
     }
 
 }
