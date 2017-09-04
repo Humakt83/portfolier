@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Humakt83/portfolier.svg?branch=master)](https://travis-ci.org/Humakt83/portfolier)
+
 # Portfolier
 
 Web template for dynamically creating your own Curriculum Vitae and/or portfolio page simply by editing some json-files.
